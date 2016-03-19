@@ -2,6 +2,7 @@
 
 var express = require('express');
 var app = express();
+var env = require('dotenv').config();
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/index.html');
 });
